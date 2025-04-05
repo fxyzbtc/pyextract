@@ -1,9 +1,9 @@
-# pyextract
+# pyextractme
 
 > 📂 A Python utility for recursively extracting files matching a regex pattern from archives (.zip, .tar.gz, .gz)
 
 [![Python Support](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/github/license/fxyzbtc/pyextract.svg)](LICENSE) <!-- Assuming MIT License like the example -->
+[![License](https://img.shields.io/github/license/fxyzbtc/pyextractme.svg)](LICENSE) <!-- Assuming MIT License like the example -->
 
 ## ✨ Features
 
@@ -17,7 +17,7 @@
 
 ### Using pip
 ```bash
-pip install pyextract
+pip install pyextractme
 ```
 
 ### Using uv (Recommended)
@@ -27,8 +27,8 @@ pip install pyextract
 # Install uv (if you haven't already)
 pip install uv
 
-# Install pyextract using uv
-uv pip install pyextract
+# Install pyextractme using uv
+uv pip install pyextractme
 ```
 
 ## 🚀 Quick Start
@@ -36,18 +36,18 @@ uv pip install pyextract
 ### Command Line Usage
 ```bash
 # Basic usage: Extract all .txt files from my_archive.zip to the 'output' directory
-pyextract my_archive.zip "\.txt$" ./output/
+pyextractme my_archive.zip "\.txt$" ./output/
 
 # Extract specific log file from a tar.gz archive
-pyextract logs.tar.gz "app\.log" ./extracted_logs/
+pyextractme logs.tar.gz "app\.log" ./extracted_logs/
 
 # Extract from a gzipped file (pattern matches the archive name for .gz)
-pyextract config.json.gz "config\.json\.gz" ./config_files/
+pyextractme config.json.gz "config\.json\.gz" ./config_files/
 ```
 
 ### Python Module Usage
 ```bash
-python -m pyextract [OPTIONS] INPUT_FILE TARGET_PATTERN OUTPUT_PATH
+python -m pyextractme [OPTIONS] INPUT_FILE TARGET_PATTERN OUTPUT_PATH
 ```
 
 ## 🎛️ Command Line Arguments
@@ -64,8 +64,8 @@ python -m pyextract [OPTIONS] INPUT_FILE TARGET_PATTERN OUTPUT_PATH
 
 1.  Clone the repository
     ```bash
-    git clone https://github.com/fxyzbtc/pyextract.git
-    cd pyextract
+    git clone https://github.com/fxyzbtc/pyextractme.git
+    cd pyextractme
     ```
 
 2.  Create and activate virtual environment (using uv)
@@ -88,7 +88,7 @@ python -m pyextract [OPTIONS] INPUT_FILE TARGET_PATTERN OUTPUT_PATH
 uv run pytest
 
 # Run tests with coverage report
-uv run pytest --cov=pyextract tests/
+uv run pytest --cov=pyextractme tests/
 ```
 
 ### Code Style
@@ -110,7 +110,7 @@ uv run isort .
 
 **Command:**
 ```bash
-pyextract my_documents.zip "\.docx?$" ./extracted_docs/
+pyextractme my_documents.zip "\.docx?$" ./extracted_docs/
 ```
 
 **Input:** `my_documents.zip` containing:
@@ -152,7 +152,7 @@ This project is licensed under the MIT License. (Please add a LICENSE file if on
 
 ## 📞 Support
 
-- 📫 Report issues on [GitHub Issues](https://github.com/fxyzbtc/pyextract/issues)
+- 📫 Report issues on [GitHub Issues](https://github.com/fxyzbtc/pyextractme/issues)
 - 💬 Ask questions or discuss ideas in the project's discussion forum (if available).
 
 ---

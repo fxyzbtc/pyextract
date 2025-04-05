@@ -11,7 +11,7 @@ from typer.testing import CliRunner
 
 # Assuming your main script is runnable and the typer app object is named 'app'
 # Adjust the import path if your structure is different
-from pyextract.main import app
+from pyextractme.main import app
 
 runner = CliRunner()
 
